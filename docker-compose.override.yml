@@ -5,3 +5,4 @@ services:
       - "${NGINX_DEV_PORT}:80"
     volumes:
       - ${NGINX_HTML_VOLUME}:/usr/share/nginx/html
+      # - ${NGINX_CONFIG_VOLUME}:/etc/nginx
