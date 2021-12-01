@@ -1,0 +1,5 @@
+version: ${COMPOSE_API_VERSION}
+services:
+  nginx:
+    ports:
+      - "${NGINX_PROD_PORT}:80"

@@ -1,0 +1,11 @@
+version: ${COMPOSE_API_VERSION}
+services:
+  nginx:
+    build: ./services/nginx
+    image: ${REGISTRY}/nginx:${NGINX_IMG_TAG}
+    container_name: "${APP_NAME}_nginx"
+    secrets:
+      - nginx_secrets
+secrets:
+  nginx_secrets:
+    file: ./services/nginx/.secrets
