@@ -1,4 +1,3 @@
-version: ${COMPOSE_API_VERSION}
 services:
   nginx:
     ports:
